@@ -11,7 +11,7 @@
 //     const src = document.querySelector('.banner image')
 //
 //     src.appendChild(img)
-// 
+//
 //   const navBar = document.createElement('div')
 //
 //     const home = document.createElement('div')
@@ -34,13 +34,13 @@
 //   }
 // }
 
-export { renderBase }
-
-
-const data = 'hi';
-const dataTwo = 'bye';
-export * as
-
-export * as something from 'wherever'
-
-something.data
+// export { renderBase }
+//
+//
+// const data = 'hi';
+// const dataTwo = 'bye';
+// export * as
+//
+// export * as something from 'wherever'
+//
+// something.data
