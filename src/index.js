@@ -4,6 +4,8 @@ import { renderContact } from './modules/contact'
 
 renderHome();
 
+let navBar
+
 (function addListeners() {
   navBar = document.querySelectorAll('.navBar')
 

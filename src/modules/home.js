@@ -1,6 +1,5 @@
 
 function renderHome() {
-  console.log('renderHome()')
   const content = document.querySelector('.content')
 
   const banner = document.createElement('div')
@@ -9,21 +8,21 @@ function renderHome() {
 
     const home = document.createElement('div')
     home.innerHTML = "Home"
-    home.classList.add('bar home')
-    navBar.appendchild('home')
+    home.classList.add('navBar')
+    navBar.appendChild(home)
 
     const menu = document.createElement('div')
     menu.innerHTML = "Menu"
-    menu.classList.add('bar menu')
-    navBar.appendChild('home')
+    menu.classList.add('navBar')
+    navBar.appendChild(menu)
 
     const contact = document.createElement('div')
     contact.innerHTML = 'Contact'
-    contact.classList.add('bar contact')
-    navBar.appendChild('contact')
+    contact.classList.add('navBar')
+    navBar.appendChild(contact)
 
   const homeContent = document.createElement('div')
-  homeContent.classList.add('content home')
+  homeContent.classList.add('content-home')
 
     const homeHead = document.createElement('h1')
       homeHead.innerHTML = 'Testing homeHead'
