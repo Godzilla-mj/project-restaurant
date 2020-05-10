@@ -1,0 +1,22 @@
+
+.content {
+  display: flex;
+  align-items: center;
+
+}
+
+.navBar {
+  display: flex;
+}
+
+.homeContent {
+  display: flex;
+}
+
+.menuContent {
+  display: flex;
+}
+
+.contactContent {
+  display: flex;
+}
