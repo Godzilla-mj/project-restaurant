@@ -30,8 +30,6 @@
   background-color: #111;
 }
 
-
-
 .homeContent {
   display: flex;
 }
@@ -40,6 +38,13 @@
   display: flex;
 }
 
-.contactContent {
+.ccContainer {
   display: flex;
+  flex-direction: column;
+}
+
+.cc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
