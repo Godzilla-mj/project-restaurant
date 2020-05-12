@@ -28,14 +28,38 @@ function renderMenu() {
     navBar.appendChild(contact)
 
   const menuContent = document.createElement('div')
-  menuContent.classList.add('content-menu')
+  menuContent.classList.add('content-menuList')
 
     const menuHead = document.createElement('h1')
-      menuHead.innerHTML = 'Testing menuHead'
+      menuHead.innerHTML = 'Menu:'
       menuContent.appendChild(menuHead)
-    const menuTxt = document.createElement('p')
-      menuTxt.innerHTML = 'Testing menuTxt'
-      menuContent.appendChild(menuTxt)
+    const menuList = document.createElement('div')
+      menuList.classList.add('menuList')
+
+    const menuArr = [
+      ['Cold Deli Meat Cut Spread', '$MP', '<img src="imgs/coldcuts.jpeg">'],
+      ['Salty Meat Spread', '$MP', '<img src="imgs/meat.jpg">'],
+      ['Truly Tough Spread', '50% OFF $MP', '<img src="imgs/saltyspitoon.jpg">'],
+      ['Weenie Hut Spread', '50% MORE $MP', '<img src="imgs/vegan.jpg">'],
+      ['Salty Tough Cannibal Spread', 'FREE YOU ANIMAL', '<img src="imgs/seafood.jpg">']
+    ]
+
+    for (let i = 0; i < menuArr.length; i++) {
+      const row = document.createElement('div')
+      row.classList.add('row')
+      for (let j = 0; j < menuArr[i].length; j++) {
+        const item = document.createElement('div')
+        item.classList.add('food')
+        item.innerHTML = menuArr[i][j];
+
+        if (j === 2) {
+          item.classList.add('itemImg')
+        }
+        row.appendChild(item)
+      }
+      menuList.appendChild(row)
+    }
+    menuContent.appendChild(menuList)
 
   content.appendChild(navBar)
   content.appendChild(menuContent)

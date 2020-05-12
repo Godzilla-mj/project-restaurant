@@ -32,10 +32,13 @@ function renderHome() {
   homeContent.classList.add('content-home')
 
     const homeHead = document.createElement('h1')
-      homeHead.innerHTML = 'Testing homeHead'
+      homeHead.innerHTML = 'Welcome to Salty Weenie Hut!'
       homeContent.appendChild(homeHead)
+    const homeDescrip = document.createElement('h4')
+      homeDescrip.innerHTML = 'Where the tough meets the weak!'
+      homeContent.appendChild(homeDescrip)
     const homeTxt = document.createElement('p')
-      homeTxt.innerHTML = 'Testing homeTxt'
+      homeTxt.innerHTML = 'Please visit our main location! We will soon be adding more locations soon!'
       homeContent.appendChild(homeTxt)
 
   content.appendChild(navBar)
