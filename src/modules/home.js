@@ -1,7 +1,7 @@
 
 function renderHome() {
   console.log("renderHome()")
-  const content = document.querySelector('.content')
+  const content = document.querySelector('#content')
 
   const navBar = document.createElement('div')
   navBar.classList.add('navBar')

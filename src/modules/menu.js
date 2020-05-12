@@ -1,6 +1,6 @@
 function renderMenu() {
   console.log('renderMenu()')
-  const content = document.querySelector('.content')
+  const content = document.querySelector('#content')
 
   const navBar = document.createElement('div')
   navBar.classList.add('navBar')
